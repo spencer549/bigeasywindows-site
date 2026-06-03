@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" width="280" height="60">
+  <defs>
+    <style>
+      .logo-text { font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Window Icon -->
+  <g transform="translate(0, 6)">
+    <!-- Window Frame -->
+    <rect x="2" y="2" width="44" height="44" rx="3" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+    <!-- Window Panes -->
+    <line x1="24" y1="2" x2="24" y2="46" stroke="#FFFFFF" stroke-width="2"/>
+    <line x1="2" y1="24" x2="46" y2="24" stroke="#FFFFFF" stroke-width="2"/>
+    <!-- Gold Accent - Sunlight reflection -->
+    <path d="M6 6 L18 6 L6 18 Z" fill="#D4A853" opacity="0.9"/>
+  </g>
+
+  <!-- BIG EASY Text -->
+  <text x="58" y="28" class="logo-text" font-size="22" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">BIG EASY</text>
+
+  <!-- WINDOWS Text -->
+  <text x="58" y="48" class="logo-text" font-size="16" font-weight="600" fill="#FFFFFF" letter-spacing="2">WINDOWS</text>
+</svg>
