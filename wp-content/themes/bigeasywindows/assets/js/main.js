@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Team carousel (Brian / Jose / Corey) — auto-rotate + dot nav
+  // Team carousel (Brian / Jose / Corey), auto-rotate + dot nav
   document.querySelectorAll('[data-team-carousel]').forEach(function(carousel) {
     const slides = carousel.querySelectorAll('.team-slide');
     const dots = carousel.querySelectorAll('.team-dot');
