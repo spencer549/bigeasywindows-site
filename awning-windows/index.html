@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Speed: warm the GHL form connections early so the lead forms paint faster -->
+    <link rel="preconnect" href="https://api.leadconnectorhq.com" crossorigin>
+    <link rel="preconnect" href="https://link.msgsndr.com" crossorigin>
+    <link rel="dns-prefetch" href="https://widgets.leadconnectorhq.com">
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 
 	<!-- This site is optimized with the Yoast SEO plugin v27.6 - https://yoast.com/product/yoast-seo-wordpress/ -->
@@ -118,7 +122,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 <a href="tel:5043848165" class="header-phone">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>                    <span>(504) 384-8165</span>
                 </a>
-                <a href="#contact" class="btn btn-primary">Get Free Quote</a>
+                <a href="../contact/" class="btn btn-primary" data-lead-modal>Get Free Quote</a>
                 <button class="mobile-menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
             </div>
         </div>
@@ -135,10 +139,10 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                         <p class="service-hero-subtitle">Top-hinged, opens like an awning. Leave it open in the rain. Best ventilation per inch of opening.</p>
                         <div class="hero-cta">
                 <a href="tel:5043848165" class="btn btn-primary btn-lg"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Call (504) 384-8165</a>
-                <a href="../contact/" class="btn btn-secondary btn-lg" style="color:white;border-color:white;">Get Free Quote</a>
+                <a href="../contact/" class="btn btn-secondary btn-lg" style="color:white;border-color:white;" data-lead-modal>Get Free Quote</a>
             </div>
             <div class="hero-trust">
-                <div class="trust-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><span>4.9 from 200+ reviews</span></div>
+                <div class="trust-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><span>5 Star Reviews</span></div>
                 <div class="trust-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg><span>Licensed &amp; Insured</span></div>
                 <div class="trust-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg><span>Hurricane-rated</span></div>
                 <div class="trust-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg><span>Same-day quotes</span></div>
@@ -158,7 +162,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>                <span>Greater New Orleans Based</span>
             </div>
             <div class="bew-trust-badge">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>                <span>4.9 Google Rating</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>                <span>5 Star Reviews</span>
             </div>
             <div class="bew-trust-badge">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>                <span>Zero Subcontracting</span>
@@ -277,7 +281,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <section class="bew-sp-related">
     <div class="container">
         <div class="section-header">
-            <div class="bew-eyebrow" style="background:rgba(212,168,83,0.15);color:var(--color-gold);">More From Big Easy Windows</div>
+            <div class="bew-eyebrow" style="background:rgba(232,163,61,0.15);color:var(--color-gold);">More From Big Easy Windows</div>
             <h2 style="color:#fff;">Other Window Types We Install</h2>
         </div>
         <div class="bew-sp-related-grid">
@@ -357,7 +361,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
             <h2>Real Reviews From New Orleans Homeowners</h2>
             <div class="bew-review-rating">
                 <span class="bew-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                <span class="bew-rating-meta">4.9 average &middot; 200+ Google Reviews</span>
+                <span class="bew-rating-meta">5 Star Reviews</span>
             </div>
         </div>
         <div class="testimonials-grid">
@@ -450,54 +454,18 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 <div class="action-stats">
                     <div class="action-stat"><div class="action-stat-num">30+</div><div class="action-stat-label">Years in New Orleans</div></div>
                     <div class="action-stat"><div class="action-stat-num">1,000+</div><div class="action-stat-label">Windows Installed</div></div>
-                    <div class="action-stat"><div class="action-stat-num">4.9&#9733;</div><div class="action-stat-label">200+ Google Reviews</div></div>
+                    <div class="action-stat"><div class="action-stat-num">5&#9733;</div><div class="action-stat-label">Star Reviews</div></div>
                     <div class="action-stat"><div class="action-stat-num">100%</div><div class="action-stat-label">Local, In-House Crew</div></div>
                 </div>
             </div>
             <div class="action-form">
                 <h3>Get Your Free Quote</h3>
                 <p class="action-form-trust"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg> Free, no-obligation quote &middot; Flexible financing available &middot; We never share your info.</p>
-                
-<div class="wpcf7 no-js" id="wpcf7-f114-o1" lang="en-US" dir="ltr" data-wpcf7-id="114">
-<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-<form action="/awning-windows/#wpcf7-f114-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
-<fieldset class="hidden-fields-container"><input type="hidden" name="_wpcf7" value="114" /><input type="hidden" name="_wpcf7_version" value="6.1.6" /><input type="hidden" name="_wpcf7_locale" value="en_US" /><input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f114-o1" /><input type="hidden" name="_wpcf7_container_post" value="0" /><input type="hidden" name="_wpcf7_posted_data_hash" value="" />
-</fieldset>
-<div class="bew-form-row">
-	<p><span class="wpcf7-form-control-wrap" data-name="first-name"><input aria-label="First name" size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="First Name *" value="" type="text" name="first-name" /></span><span class="wpcf7-form-control-wrap" data-name="last-name"><input aria-label="Last name" size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Last Name *" value="" type="text" name="last-name" /></span>
-	</p>
-</div>
-<div class="bew-form-row">
-	<p><span class="wpcf7-form-control-wrap" data-name="phone"><input aria-label="Phone number" size="40" maxlength="400" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="(504) 000-0000" value="" type="tel" name="phone" /></span><span class="wpcf7-form-control-wrap" data-name="email"><input aria-label="Email address" size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email" aria-invalid="false" placeholder="Email Address" value="" type="email" name="email" /></span>
-	</p>
-</div>
-<div class="bew-form-field">
-	<p><span class="wpcf7-form-control-wrap" data-name="address"><input aria-label="Property address" size="40" maxlength="400" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Property Address, New Orleans, LA" value="" type="text" name="address" /></span>
-	</p>
-</div>
-<div class="bew-form-field">
-	<p><span class="wpcf7-form-control-wrap" data-name="service"><select aria-label="Service needed" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false" name="service"><option value="Select a service...">Select a service...</option><option value="Window Replacement">Window Replacement</option><option value="Storm / Hurricane Windows">Storm / Hurricane Windows</option><option value="New Construction">New Construction</option><option value="Window Repair">Window Repair</option><option value="Commercial Windows">Commercial Windows</option><option value="Whole-Home Upgrade">Whole-Home Upgrade</option><option value="Other / Not Sure">Other / Not Sure</option></select></span>
-	</p>
-</div>
-<div class="bew-form-field">
-	<p><span class="wpcf7-form-control-wrap" data-name="windows"><select aria-label="Number of windows" class="wpcf7-form-control wpcf7-select" aria-invalid="false" name="windows"><option value="Number of windows...">Number of windows...</option><option value="1-3 windows">1-3 windows</option><option value="4-8 windows">4-8 windows</option><option value="9-15 windows">9-15 windows</option><option value="16+ windows">16+ windows</option></select></span>
-	</p>
-</div>
-<div class="bew-form-field">
-	<p><span class="wpcf7-form-control-wrap" data-name="message"><textarea aria-label="Project details" cols="40" rows="3" maxlength="2000" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Tell us about your project..." name="message"></textarea></span>
-	</p>
-</div>
-<div class="bew-form-field bew-form-consent">
-	<p><span class="wpcf7-form-control-wrap" data-name="consent"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input aria-label="I consent to be contacted about my free quote" type="checkbox" name="consent" value="1" aria-invalid="false" /><span class="wpcf7-list-item-label">I agree to receive communications from Big Easy Windows.</span></label></span></span></span>
-	</p>
-</div>
-<div class="bew-form-field">
-	<p><input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="Get My Free Quote" />
-	</p>
-</div><div class="wpcf7-response-output" aria-hidden="true"></div>
-</form>
-</div>
-            </div>
+                                    <div class="action-form-popup">
+                        <a href="../contact/" class="btn btn-primary btn-lg" data-lead-modal><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Get Your Free Estimate</a>
+                        <p class="action-form-popup-note">Opens a quick form &middot; takes about 60 seconds. Prefer to talk? <a href="tel:5043848165">Call (504) 384-8165</a>.</p>
+                    </div>
+                            </div>
         </div>
     </div>
 </section>
@@ -638,12 +606,28 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 </footer>
 <div class="mobile-sticky-cta">
     <a href="tel:5043848165" class="btn btn-phone"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Call Now</a>
-    <a href="#contact" class="btn btn-primary">Get Quote</a>
+    <a href="../contact/" class="btn btn-primary" data-lead-modal>Get Quote</a>
+</div>
+<div class="bew-modal" id="bewLeadModal" aria-hidden="true">
+    <div class="bew-modal-backdrop" data-modal-close></div>
+    <div class="bew-modal-box" role="dialog" aria-modal="true" aria-label="Get a free window estimate">
+        <div class="bew-modal-head">
+            <h3>Get Your Free Estimate</h3>
+            <button type="button" class="bew-modal-close" data-modal-close aria-label="Close form">&times;</button>
+        </div>
+        <div class="bew-modal-body">
+            <iframe
+                title="Free window estimate form"
+                data-ghl-src="https://api.leadconnectorhq.com/widget/form/z3gV7YWzxOpGtzw4afhs?notrack=true"
+                src="about:blank"></iframe>
+        </div>
+    </div>
 </div>
 <script type="speculationrules">
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","../wp-content/uploads/*","../wp-content/*","../wp-content/plugins/*","../wp-content/themes/bigeasywindows/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
-<script id="wp-hooks-js" src="../wp-includes/js/dist/hooks.min.js"></script>
+<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="66c37958d1bc9e8a86f3add5"></script>
+    <script id="wp-hooks-js" src="../wp-includes/js/dist/hooks.min.js"></script>
 <script id="wp-i18n-js" src="../wp-includes/js/dist/i18n.min.js"></script>
 <script id="wp-i18n-js-after">
 wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );

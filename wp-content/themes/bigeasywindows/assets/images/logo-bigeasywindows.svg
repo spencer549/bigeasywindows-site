@@ -8,17 +8,17 @@
   <!-- Window Icon -->
   <g transform="translate(0, 6)">
     <!-- Window Frame -->
-    <rect x="2" y="2" width="44" height="44" rx="3" fill="none" stroke="#1A2B4A" stroke-width="3"/>
+    <rect x="2" y="2" width="44" height="44" rx="3" fill="none" stroke="#0E2A47" stroke-width="3"/>
     <!-- Window Panes -->
-    <line x1="24" y1="2" x2="24" y2="46" stroke="#1A2B4A" stroke-width="2"/>
-    <line x1="2" y1="24" x2="46" y2="24" stroke="#1A2B4A" stroke-width="2"/>
+    <line x1="24" y1="2" x2="24" y2="46" stroke="#0E2A47" stroke-width="2"/>
+    <line x1="2" y1="24" x2="46" y2="24" stroke="#0E2A47" stroke-width="2"/>
     <!-- Gold Accent - Sunlight reflection -->
-    <path d="M6 6 L18 6 L6 18 Z" fill="#D4A853" opacity="0.9"/>
+    <path d="M6 6 L18 6 L6 18 Z" fill="#E8A33D" opacity="0.9"/>
   </g>
 
   <!-- BIG EASY Text -->
-  <text x="58" y="28" class="logo-text" font-size="22" font-weight="800" fill="#1A2B4A" letter-spacing="-0.5">BIG EASY</text>
+  <text x="58" y="28" class="logo-text" font-size="22" font-weight="800" fill="#0E2A47" letter-spacing="-0.5">BIG EASY</text>
 
   <!-- WINDOWS Text -->
-  <text x="58" y="48" class="logo-text" font-size="16" font-weight="600" fill="#1A2B4A" letter-spacing="2">WINDOWS</text>
+  <text x="58" y="48" class="logo-text" font-size="16" font-weight="600" fill="#0E2A47" letter-spacing="2">WINDOWS</text>
 </svg>

@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Smooth scroll
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', function(e) {
+      if (this.hasAttribute('data-lead-modal')) return;
       const target = document.querySelector(this.getAttribute('href'));
       if (target) {
         e.preventDefault();
@@ -85,4 +86,33 @@ document.addEventListener('DOMContentLoaded', function() {
     carousel.addEventListener('mouseleave', start);
     start();
   });
+
+  // Lead form popup (GHL) — iframe src injected on first open (lazy, but loads visible)
+  (function(){
+    var modal = document.getElementById('bewLeadModal');
+    if (!modal) return;
+    var iframe = modal.querySelector('iframe[data-ghl-src]');
+    var loaded = false;
+    function openModal(e) {
+      if (e) e.preventDefault();
+      if (!loaded && iframe) { iframe.src = iframe.getAttribute('data-ghl-src'); loaded = true; }
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeModal() {
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+    document.querySelectorAll('[data-lead-modal]').forEach(function(trigger) {
+      trigger.addEventListener('click', openModal);
+    });
+    modal.querySelectorAll('[data-modal-close]').forEach(function(el) {
+      el.addEventListener('click', closeModal);
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+    });
+  })();
 });
