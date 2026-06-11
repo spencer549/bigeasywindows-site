@@ -607,7 +607,8 @@ p { margin: 0 0 var(--space-4); }
 .other-area-link:hover { background: var(--color-navy); color: white; }
 
 /* Legal Page */
-.legal-content { max-width: 800px; margin: 0 auto; }
+.legal-content { max-width: none; margin: 0; }
+.legal-content > *:first-child { margin-top: 0; }
 .legal-content h2 { margin-top: var(--space-8); font-size: 24px; }
 .legal-content h3 { margin-top: var(--space-6); font-size: 20px; }
 .legal-content p, .legal-content ul, .legal-content ol { margin-bottom: var(--space-4); }
